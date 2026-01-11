@@ -1,13 +1,103 @@
-import React from 'react';
+import React, { useState } from 'react';
+import udupiLogo from '../assets/udupi_upahar_logo.png';
+import tajLogo from '../assets/taj_banjara.png';
+import syndicateLogo from '../assets/syndicate_bank.png';
+import suprabhatLogo from '../assets/suprabhat.png';
+import { Building2, Home } from 'lucide-react';
 import './ClientCarousel.css';
 
 const clients = [
-    "Swathi Group of Hotels", "HTC Global Services", "Ohris Group",
-    "Corporation Bank", "Pista House", "RA CHEM Pharma",
-    "Nandini Group", "Udupi Ahaar", "Suprabath Group",
-    "Hotel NKM’s Grand", "Zuari Cement", "AMD",
-    "Yatri Nivas", "Vasavi Engineering College", "Megasoft Technologies"
+    { name: "Swathi Group of Hotels", logo: null },
+    { name: "HTC Global Services", logo: "/logos/htc.png" },
+    { name: "Taj Banjara", logo: tajLogo }, // Added at prominent position 3
+    { name: "Ohris Group", logo: "/logos/ohris.png" },
+    { name: "Corporation Bank", logo: "/logos/corpbank.png" },
+    { name: "Syndicate Bank", logo: syndicateLogo }, // Added
+    { name: "Pista House", logo: "/logos/pista.png" },
+    { name: "RA CHEM Pharma", logo: "/logos/rachem.png" },
+    { name: "Nandini Group", logo: null },
+    { name: "Udupi Upahar", logo: udupiLogo },
+    { name: "Hotel Suprabhat", logo: suprabhatLogo },
+    { name: "Hotel NKM’s Grand", logo: null },
+    { name: "Zuari Cement", logo: "/logos/zuari.png" },
+    { name: "AMD", logo: "/logos/amd.png" },
+    { name: "Yatri Nivas", logo: null },
+    { name: "Vasavi Engineering College", logo: "/logos/vasavi.png" },
+    { name: "Megasoft Technologies", logo: "/logos/megasoft.png" },
+    {
+        name: "Trusted by 5,000+ Domestic Households",
+        logo: null,
+        isSpecial: true,
+        icon: <Home size={28} />
+    }
 ];
+
+const ClientCard = ({ client }) => {
+    const [imgError, setImgError] = useState(false);
+
+    // Specific logos that need to be larger to match others visually
+    const isSmallLogo = client.name === "HTC Global Services" || client.name === "Ohris Group" || client.name === "Zuari Cement";
+
+    // Specific logos that need to be medium (20% bigger)
+    const isMediumLogo = client.name === "Taj Banjara";
+
+    // Specific logos that need to be smaller (AMD is too big)
+    const isLargeLogo = client.name === "AMD";
+
+    let logoClass = "client-logo";
+    if (isSmallLogo) logoClass += " logo-enlarged";
+    if (isMediumLogo) logoClass += " logo-medium";
+    if (isLargeLogo) logoClass += " logo-reduced";
+
+    // Special styling for the "Domestic Households" card
+    if (client.isSpecial) {
+        return (
+            <div
+                className="client-card special-card"
+                title={client.name}
+                style={{
+                    background: 'linear-gradient(135deg, #FFB700 0%, #FF8C00 100%)',
+                    color: 'white',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    textAlign: 'center',
+                    border: 'none',
+                    padding: '1rem'
+                }}
+            >
+                <div style={{ marginBottom: '0.5rem', opacity: 0.9 }}>
+                    {client.icon}
+                </div>
+                <span style={{ fontWeight: 700, fontSize: '0.95rem', lineHeight: 1.3 }}>
+                    {client.name}
+                </span>
+            </div>
+        );
+    }
+
+    return (
+        <div className="client-card" title={client.name}>
+            {client.logo && !imgError ? (
+                <>
+                    <img
+                        src={client.logo}
+                        alt={client.name}
+                        className={logoClass}
+                        onError={() => setImgError(true)}
+                    />
+                    <div className="client-tooltip">{client.name}</div>
+                </>
+            ) : (
+                <div className="client-fallback">
+                    <Building2 size={24} className="client-icon" />
+                    <span className="client-text">{client.name}</span>
+                </div>
+            )}
+        </div>
+    );
+};
 
 const ClientCarousel = () => {
     return (
@@ -18,10 +108,10 @@ const ClientCarousel = () => {
 
                 <div className="carousel-wrapper">
                     <div className="carousel-track">
-                        {/* Double the list for seamless loop */}
-                        {[...clients, ...clients].map((client, index) => (
+                        {/* Triple the list for smoother infinite loop on wide screens */}
+                        {[...clients, ...clients, ...clients].map((client, index) => (
                             <div key={index} className="client-slide">
-                                <span className="client-name">{client}</span>
+                                <ClientCard client={client} />
                             </div>
                         ))}
                     </div>

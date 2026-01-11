@@ -10,8 +10,7 @@ const Footer = () => {
                 <div className="footer-col brand-col">
                     <div className="brand-logo">
                         {/* Simple Text Logo for Footer */}
-                        <h2>IPCS</h2>
-                        <p>Industrial Pest Control Services</p>
+                        <h2>Industrial Pest Control Services</h2>
                     </div>
                     <p className="brand-desc">
                         Since 1982, we have been the leading provider of Industrial Pest Control in Hyderabad. We use WHO-approved Green Pest Management and natural pesticides to eliminate infestations in factories, hotels, and corporate offices. With 40 years of experience, we provide the most reliable, high-standard pest removal in Telangana.

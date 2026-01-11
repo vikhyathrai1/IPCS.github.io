@@ -10,6 +10,8 @@ import Contact from './pages/Contact';
 
 import Blog from './pages/Blog';
 
+import FloatingBadge from './components/FloatingBadge';
+
 function App() {
   return (
     <Router>
@@ -26,6 +28,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <FloatingBadge />
       </div>
     </Router>
   );

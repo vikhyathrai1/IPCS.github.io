@@ -38,7 +38,7 @@ const Services = () => {
                         </ul>
                     </ServiceCard>
 
-                    <ServiceCard title="Disinfections" icon={<Shield size={40} />}>
+                    <ServiceCard title="Disinfectation" icon={<Shield size={40} />}>
                         <p>
                             Comprehensive insecticidal spray treatments against a wide range of common pests including bugs, flies, spiders, lizards, and mosquitoes.
                             Ensures a hygienic environment for homes and offices.
@@ -58,10 +58,10 @@ const Services = () => {
                         </p>
                     </ServiceCard>
 
-                    <ServiceCard title="Fogging" icon={<CloudRain size={40} />}>
+                    <ServiceCard title="Mosquito Eradication and Control" icon={<CloudRain size={40} />}>
                         <p>
-                            Fogging is the process of acting against Mosquitoes in large open areas.
-                            Ideal for campuses, gardens, and industrial compounds to reduce vector-borne disease risks.
+                            Comprehensive management of mosquito populations in large open areas.
+                            Ideal for campuses, gardens, and industrial compounds to reduce vector-borne disease risks using methods like fogging and larvicide.
                         </p>
                     </ServiceCard>
 

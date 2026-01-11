@@ -13,7 +13,7 @@ const ERDStrategy = () => {
 
                 <div className="erd-grid">
                     <div className="erd-step">
-                        <div className="step-number">01</div>
+
                         <div className="step-icon">
                             <Shield size={32} />
                         </div>
@@ -23,7 +23,7 @@ const ERDStrategy = () => {
                     </div>
 
                     <div className="erd-step">
-                        <div className="step-number">02</div>
+
                         <div className="step-icon">
                             <Lock size={32} />
                         </div>
@@ -33,7 +33,7 @@ const ERDStrategy = () => {
                     </div>
 
                     <div className="erd-step">
-                        <div className="step-number">03</div>
+
                         <div className="step-icon">
                             <Zap size={32} />
                         </div>

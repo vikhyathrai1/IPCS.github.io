@@ -1,131 +1,144 @@
 import React, { useState } from 'react';
 import { Calendar, User, ArrowRight, ArrowLeft, Image as ImageIcon } from 'lucide-react';
 
-import blog1 from '../assets/blog1.jpg';
+import blog1 from '../assets/blog1_new.png';
 import blog2 from '../assets/blog2.jpg';
-import blog3 from '../assets/blog3.jpg';
-import blog4 from '../assets/blog4.jpg';
-import blog5 from '../assets/blog5.jpg';
+import blog3 from '../assets/blog3_new.png';
+import blog4 from '../assets/blog4_new.png';
+import blog5 from '../assets/blog5_new.png';
 import blog6 from '../assets/blog6.jpg';
 
 const blogData = [
     {
         id: 1,
-        title: "The Pest Control Partnership: 40 Years of Doing It Right",
-        category: "Our Philosophy & Approach",
+        title: "Pre Construction Termite Control",
+        category: "Termite Control",
         date: "Jan 15, 2026",
-        author: "Founder",
+        author: "IPCS Expert",
         image: blog1,
-        excerpt: "After four decades in this industry, I have learned one undeniable truth: quick fixes do not last. Real pest control isn't just about spraying chemicals.",
+        excerpt: "Termites are one of the most destructive pests. The most effective way to protect a building is to address the problem before construction begins.",
         content: `
-            <p>After four decades in this industry, I have learned one undeniable truth: quick fixes do not last. Real pest control isn't just about spraying chemicals; it is about understanding nature and protecting your property for the long term.</p>
+            <p style="margin-bottom: 2.5rem">Termites are one of the most destructive pests, and the damage they cause often goes unnoticed for years. The most effective way to protect a building from termites is to address the problem before construction even begins. <strong>Pre construction termite control is a preventive treatment carried out at the soil level to stop termites from entering the structure in the future.</strong></p>
             
-            <p>We have survived in this business for over 40 years because we build trust. We don't cut corners. We use only the highest quality materials available. Why? Because cheap materials fail. When materials fail, pests return, and you become frustrated. We use products that are proven to work effectively and safely.</p>
+            <p style="margin-bottom: 2.5rem">This treatment is done before the foundation is laid. The soil in and around the foundation area is treated with approved anti termite chemicals. These chemicals create a continuous protective barrier between the ground and the building. When termites try to move from the soil into the structure, the barrier blocks them and eliminates the risk of infestation.</p>
             
-            <p>Our process is simple but thorough. We inspect first. We listen to your concerns. Then, we design a plan specifically for your situation. We execute that plan with precision.</p>
+            <p style="margin-bottom: 2.5rem"><strong>In cities like Hyderabad</strong>, termite activity is common due to favorable soil and weather conditions. Once a building is completed, termites can hide inside walls, wooden doors, cupboards, and flooring. By the time signs such as hollow wood or mud tubes appear, the damage is usually extensive and costly to repair.</p>
             
-            <p>However, effective pest control is a shared responsibility. We bring the expertise and the best tools. You bring the daily maintenance. We need you to fix leaky faucets, seal up food, and keep clutter down. When we work together, we create an environment where pests cannot thrive. We are your partners in protecting your home.</p>
+            <p style="margin-bottom: 2.5rem">Pre construction termite control is not only more reliable than post construction treatments, it is also more cost effective. Since the treatment is applied in an open site, it allows complete coverage without drilling or damage to finished surfaces. This ensures long term protection without disturbing daily life later.</p>
+            
+            <p style="margin-bottom: 2.5rem">At <strong>Industrial Pest Control Services</strong>, we begin with a detailed site inspection to understand the soil condition and construction plan. Our experienced technicians apply the treatment in stages, following industry standards and safety guidelines. The correct dosage and method are used to ensure durability and effectiveness. After completion, a service certificate is provided for assurance and future reference.</p>
+            
+            <p style="margin-bottom: 2.5rem">Whether you are building a home, apartment, office, or commercial property, pre construction termite control is a critical step. Investing in prevention at the right time protects your property, saves money, and gives lasting peace of mind.</p>
         `
     },
     {
         id: 2,
-        title: "Protecting Your Home: A Structured Approach to Residential Pests",
-        category: "Residential Services",
+        title: "Hotel and Kitchen Pest Control",
+        category: "Commercial Services",
         date: "Jan 12, 2026",
-        author: "Senior Technician",
+        author: "IPCS Expert",
         image: blog2,
-        excerpt: "Your home is your sanctuary. In my 40 years of experience, I have seen how quickly an infestation can steal your peace of mind. We are here to restore it.",
+        excerpt: "Hotels, restaurants, and commercial kitchens face a constant risk from pests. Regular and planned pest control is essential for hygiene and reputation.",
         content: `
-            <p>Your home is your sanctuary. In my 40 years of experience, I have seen how quickly an infestation can steal your peace of mind. We are here to restore it.</p>
+            <p style="margin-bottom: 2.5rem">Hotels, restaurants, and commercial kitchens face a constant risk from pests. Cockroaches, rodents, flies, and mosquitoes are not just unpleasant, they are serious hygiene and health concerns. <strong>In Hyderabad, food establishments are expected to maintain strict cleanliness standards to comply with GHMC regulations and routine inspections.</strong></p>
 
-            <p>When we treat a home, we don't guess. We follow a proven structure to ensure nothing is missed.</p>
+            <p style="margin-bottom: 2.5rem">Pests are attracted to kitchens because of food, moisture, and warmth. Even a small lapse in cleaning or waste disposal can lead to infestations. Once pests settle in, they multiply quickly and become difficult to control with one time treatments. This is why regular and planned pest control is essential for hotels and kitchens.</p>
 
-            <p>First, we conduct a complete interior and exterior inspection. We look for entry points that others might miss. Second, we create a customized treatment plan based on the specific pests we find. Third, we apply high-grade treatments, focusing on the exterior perimeter to stop bugs before they get inside. We use materials designed for long-lasting residential protection.</p>
+            <p style="margin-bottom: 2.5rem">Professional pest control focuses on prevention as much as treatment. Areas like drains, storage rooms, false ceilings, pantry corners, and waste disposal zones need special attention. Treatments must be effective but also safe for food handling areas and staff. Strong smelling or unsafe chemicals can disrupt operations and put customers at risk.</p>
 
-            <p>We also believe in honesty. We will tell you what you need to do to help. This is shared responsibility. Simple things like trimming bushes away from the house and keeping trash cans sealed make a huge difference. We do our part with the best materials, and you do yours with sanitation. Together, we keep your home safe.</p>
+            <p style="margin-bottom: 2.5rem"><strong>At Industrial Pest Control Services, we understand the daily realities of running hotels and kitchens in Hyderabad with decades of experiences servicing multiple groups of hotels.</strong> We follow a structured inspection process and identify high risk zones before starting treatment. Our trained technicians use approved chemicals that are safe for commercial environments when applied correctly. Treatments are scheduled at convenient times to avoid disruption to kitchen operations.</p>
+
+            <p style="margin-bottom: 2.5rem">Regular service reports and guidance are provided to help maintain hygiene standards over time. We also educate staff on simple preventive measures that reduce pest activity between service visits.</p>
+
+            <p style="margin-bottom: 2.5rem">For hotels, cloud kitchens, bakeries, and commercial food establishments, pest control is not optional. It is a responsibility. With the right service partner and consistent maintenance, you can stay compliant, protect your reputation, and provide a safe environment for your customers and staff.</p>
         `
     },
     {
         id: 3,
-        title: "Protecting Your Business Reputation: Discreet and Effective Solutions",
+        title: "Office Pest Control Services",
         category: "Commercial Services",
         date: "Jan 08, 2026",
-        author: "Commercial Lead",
+        author: "IPCS Expert",
         image: blog3,
-        excerpt: "It only takes one pest sighting to ruin a business's reputation. If you run a restaurant, warehouse, or office, you cannot afford that risk.",
+        excerpt: "Modern offices may look clean, but they are not immune to pests. Pest control in offices needs a different approach focused on safety and non-disruption.",
         content: `
-            <p>I have seen it happen too many times in my career: it only takes one pest sighting to ruin a business's reputation. If you run a restaurant, warehouse, or office, you cannot afford that risk.</p>
+            <p style="margin-bottom: 2.5rem">Modern offices and software companies may look clean on the surface, but they are not immune to pest problems. <strong>In Hyderabad, large office spaces, IT parks, and corporate buildings often deal with issues like cockroaches, mosquitoes, rodents, and ants.</strong> Air conditioned environments, pantry areas, false ceilings, and server rooms can quietly become ideal hiding spots for pests.</p>
 
-            <p>Commercial pest control requires a different level of competence. It demands discretion and rigorous documentation. We understand this deeply.</p>
+            <p style="margin-bottom: 2.5rem">Pest control in offices needs a different approach compared to homes or factories. Treatments must be effective without causing disruption to employees or daily work. Strong odors, visible residues, or noisy processes can affect productivity and comfort. Safety is also critical, especially in spaces where hundreds of people work every day.</p>
 
-            <p>Our process starts with a zero-tolerance audit. We identify vulnerable areas in your facility. We then implement a tailored plan using industrial-strength, high-quality materials designed for heavy-duty commercial environments. We schedule services during off-hours to avoid disrupting your operations.</p>
+            <p style="margin-bottom: 2.5rem">Professional office pest control focuses on targeted treatment rather than heavy spraying. High risk areas such as pantries, washrooms, storage rooms, and entry points are treated carefully. Rodent control is especially important in offices, as damage to cables and equipment can lead to serious operational issues.</p>
 
-            <p>But we need your help. Pest control is a shared responsibility, especially in commercial settings. Your staff must be trained on proper sanitation protocols and reporting procedures. If a door sweep is broken, it needs to be fixed immediately. We provide the barrier; your team maintains the discipline. We are your partners in regulatory compliance and brand protection.</p>
+            <p style="margin-bottom: 2.5rem"><strong>At Industrial Pest Control Services, we have extensive experience working with software companies and corporate offices across Hyderabad.</strong> We conduct a detailed site inspection to understand the layout, working hours, and sensitive areas. Treatments are planned during non working hours or weekends to ensure zero disturbance. Odorless and approved chemicals are used to maintain a safe and comfortable environment.</p>
+
+            <p style="margin-bottom: 2.5rem">Regular service schedules help prevent recurring infestations and ensure long term protection. We also provide reports and basic preventive guidance to facility teams.</p>
+
+            <p style="margin-bottom: 2.5rem">A pest free office is not just about cleanliness. It directly impacts employee comfort, safety, and business continuity. With the right pest control partner, offices can remain productive, hygienic, and stress free.</p>
         `
     },
     {
         id: 4,
-        title: "Defending Your Investment: Long-Term Termite Solutions",
-        category: "Termite Protection",
+        title: "Warehouse and Industrial Pest Control",
+        category: "Industrial Services",
         date: "Jan 05, 2026",
-        author: "Termite Specialist",
+        author: "IPCS Expert",
         image: blog4,
-        excerpt: "Termites are silent destroyers. By the time you see them, the damage is usually severe. You cannot gamble with termite protection.",
+        excerpt: "Warehouses and industrial facilities face unique pest control challenges. Effective warehouse pest control requires a planned and systematic approach.",
         content: `
-            <p>In over 40 years, I have seen termites cause devastating financial damage to good people. Termites are silent destroyers. By the time you see them, the damage is usually severe.</p>
+            <p style="margin-bottom: 2.5rem">Warehouses and industrial facilities face unique pest control challenges. Large open spaces, constant movement of goods, and long storage periods make these locations highly vulnerable to rodents, insects, and stored product pests. <strong>In Hyderabad, warehouses that handle food items, raw materials, packaging, or finished goods must be especially careful to prevent contamination and loss.</strong></p>
 
-            <p>You cannot gamble with termite protection. This is why we only use top-tier, proven termiticides and baiting systems. Cheaper alternatives break down too quickly in the soil. We use materials that create a lasting barrier around your foundation.</p>
+            <p style="margin-bottom: 2.5rem">Rodents are one of the biggest threats in warehouses. They damage cartons, chew through wiring, and contaminate stored goods. Insects such as beetles and moths can infest packaging and spread quickly across storage areas. Once pests establish themselves, the impact is not just financial but also operational and reputational.</p>
 
-            <p>Our process is incredibly detailed.</p>
-            <ul>
-                <li>We perform a deeply thorough inspection of your foundation, basement, and crawlspace.</li>
-                <li>We determine the best treatment method—either liquid trenching or advanced bait stations.</li>
-                <li>We apply the materials meticulously, ensuring no gaps exist in the protective zone.</li>
-            </ul>
+            <p style="margin-bottom: 2.5rem">Effective warehouse pest control requires a planned and systematic approach. One time treatments are rarely sufficient. Entry points, loading bays, perimeter areas, drains, and storage racks must be regularly monitored and treated. Preventive measures play a major role in keeping pest activity under control.</p>
 
-            <p>We also need you to manage moisture. Termites love water. As part of shared responsibility, you must ensure gutters drain away from the house and that there are no plumbing leaks. We build the fortress, but you must keep the moat dry.</p>
+            <p style="margin-bottom: 2.5rem"><strong>At Industrial Pest Control Services, we begin with a thorough inspection of the warehouse or industrial site.</strong> We study movement patterns, storage practices, and high risk zones before designing a treatment plan. Our trained technicians use approved methods that are suitable for large scale environments without affecting goods or daily operations. Special focus is given to rodent control, perimeter protection, and long term prevention.</p>
+
+            <p style="margin-bottom: 2.5rem">We provide regular service schedules, monitoring, and clear reporting to ensure consistent results. <strong>Our experience across different industries in Hyderabad allows us to adapt our approach to each facility.</strong></p>
+
+            <p style="margin-bottom: 2.5rem">For warehouses and industrial units, pest control is an essential part of asset protection. A well maintained pest management program helps safeguard inventory, maintain compliance, and ensure smooth operations.</p>
         `
     },
     {
         id: 5,
-        title: "Rodent Control: It’s Not About Traps, It’s About Exclusion",
-        category: "Rodent Exclusion",
+        title: "Domestic Household Pest Control",
+        category: "Residential Services",
         date: "Dec 28, 2025",
         author: "IPCS Expert",
         image: blog5,
-        excerpt: "Many people think rodent control is just setting a few snap traps. If you don't close the door, they will just keep coming in.",
+        excerpt: "Pest problems in homes are more common than most people realize. Home pest control needs a careful and balanced approach focused on safety.",
         content: `
-            <p>Many people think rodent control is just setting a few snap traps. In my four decades of experience, I can tell you that is barely half the job. If you don't close the door, they will just keep coming in.</p>
+            <p style="margin-bottom: 2.5rem">Pest problems in homes are more common than most people realize. Cockroaches in kitchens, mosquitoes in bedrooms, ants in storage areas, and rodents in false ceilings can quickly turn a comfortable home into a stressful space. <strong>In Hyderabad, changing weather conditions and dense residential areas make household pest issues a regular concern.</strong></p>
 
-            <p>Rats and mice carry diseases and chew wires. They are a serious threat. Our approach focuses on "exclusion"—keeping them out physically.</p>
+            <p style="margin-bottom: 2.5rem">Home pest control needs a careful and balanced approach. Treatments must be effective, but also safe for families, children, and pets. Many people try store bought sprays or quick fixes, but these usually provide only temporary relief. Without addressing the root cause, pests return again and again.</p>
 
-            <p>We start with a detective's eye. We inspect your entire property to find entry points the size of a dime. We know exactly where to look. Once identified, we use high-quality, durable materials like steel wool, metal flashing, and industrial sealant to close those holes permanently. These materials cannot be chewed through. Only after sealing the exterior do we focus on trapping the remaining rodents inside.</p>
+            <p style="margin-bottom: 2.5rem">Professional household pest control focuses on identifying where pests enter, hide, and breed. Areas such as kitchens, bathrooms, drains, balconies, and storage spaces are carefully inspected. The right treatment method is selected based on the type of pest and level of infestation. This ensures better results with minimal chemical exposure.</p>
 
-            <p>This is where shared responsibility is critical. You must eliminate attractants. Don't leave pet food outside. Clean up fallen fruit in the yard. If you stop feeding them and we stop them from entering, the problem is solved.</p>
+            <p style="margin-bottom: 2.5rem"><strong>At Industrial Pest Control Services, we understand that every home is different.</strong> Our technicians carry out a detailed inspection before starting treatment. We use approved chemicals in the correct dosage to ensure safety and effectiveness. Treatments are carried out with care, keeping daily routines and comfort in mind.</p>
+
+            <p style="margin-bottom: 2.5rem"><strong>We also guide homeowners on simple preventive steps such as proper waste disposal, reducing moisture, and sealing small gaps. These small actions make a big difference in keeping pests away between service visits as this is a shared responsibility.</strong></p>
+
+            <p style="margin-bottom: 2.5rem">A pest free home is essential for health and peace of mind. With the right treatment and ongoing prevention, households in Hyderabad can stay protected throughout the year.</p>
         `
     },
     {
         id: 6,
-        title: "A Promise Backed by 40 Years: Understanding Our Guarantee and Your Role",
-        category: "Warranty & Partnership",
+        title: "Pest Prevention Is a Shared Responsibility",
+        category: "Partnership & Education",
         date: "Dec 15, 2025",
-        author: "Management",
+        author: "IPCS Expert",
         image: blog6,
-        excerpt: "We stand firmly behind the quality of our work. However, honesty is the foundation of trust. Pest control is a shared responsibility.",
+        excerpt: "Pest control does not end with a single treatment. Long term pest prevention is a shared responsibility between the service provider and the customer.",
         content: `
-            <p>In my 40-plus years in the pest control industry, I have learned that peace of mind is the most valuable thing we offer. You need to know that when you hire us, the job is done right.</p>
+            <p style="margin-bottom: 2.5rem">Pest control does not end with a single treatment. Long term pest prevention is a shared responsibility between the service provider and the customer. <strong>While professional treatments play a crucial role, daily habits and maintenance also determine how effective pest control will be over time.</strong></p>
 
-            <p>We stand firmly behind the quality of our work. Because we follow structured processes and use only high-quality, proven materials, we offer a one-year guarantee on most of our major services, such as termite protection and rodent exclusion.</p>
+            <p style="margin-bottom: 2.5rem">Pests are attracted to food, water, and shelter. Even after a thorough treatment, issues like uncovered food, leaking pipes, open drains, or cluttered storage areas can invite pests back. In homes and commercial spaces across Hyderabad, many recurring pest problems are caused by small gaps in cleanliness and maintenance rather than treatment failure.</p>
 
-            <p>However, honesty is the foundation of trust. We must be clear that we cannot offer this same one-year guarantee for mosquito and cockroach treatments. This is not because our products are weak; it is because these pests are heavily influenced by daily sanitation.</p>
+            <p style="margin-bottom: 2.5rem">Professional pest control focuses on eliminating existing infestations and creating protective barriers. However, prevention works best when customers follow basic hygiene and upkeep practices. Simple steps such as regular waste disposal, cleaning pantry areas, fixing water leakage, and sealing cracks around doors and windows significantly reduce pest activity.</p>
 
-            <p>Pest control is a shared responsibility. It is a partnership between our expertise and your household maintenance.</p>
+            <p style="margin-bottom: 2.5rem"><strong>At Industrial Pest Control Services, we believe in educating our customers along with providing treatment.</strong> During service visits, our technicians explain high risk areas and suggest practical preventive measures. This partnership approach helps maintain results and reduces the need for frequent chemical applications.</p>
 
-            <p>No matter how accurate, professional, or potent our service is, pests will return if the environment invites them back. For example, if stagnant water is left sitting in plant saucers or buckets outdoors, it will inevitably attract new mosquitoes within days of our treatment. Similarly, if garbage is allowed to pile up indoors or crumbs are left on counters, you cannot expect cockroaches to stay away.</p>
+            <p style="margin-bottom: 2.5rem">In commercial spaces like hotels, offices, and warehouses, staff cooperation is especially important. Proper storage, timely cleaning, and reporting early signs of pest activity make pest control programs more effective and sustainable.</p>
 
-            <p>The purpose of our warranty is to ensure that we have done everything correctly on our end. It is our promise of competence. If we make a mistake in our application or slip up on any of our promises, we will return to fix the issue. We will do this free of cost, with absolutely no extra charges to you.</p>
-
-            <p>We commit to providing the best defensive barrier possible using top-tier materials. We ask you to commit to maintaining a clean environment so that barrier can do its job. When we work together as partners, your home stays protected.</p>
+            <p style="margin-bottom: 2.5rem">Pest prevention is most successful when both sides work together. With professional treatment and responsible maintenance, properties remain cleaner, safer, and pest free for longer periods. This shared approach not only improves results but also creates healthier living and working environments across Hyderabad.</p>
         `
     }
 ];
