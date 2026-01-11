@@ -25,7 +25,7 @@ const Testimonials = () => (
                         role: "MNC Tech Park, Hitech City"
                     },
                     {
-                        quote: "I was worried about chemicals because of my kids and pets. The IPCS team was so patient, explained the safety measures, and solved our ant problem completely. It feels great to have a safe and pest-free home.",
+                        quote: "I was worried about chemicals because of my kids and pets. The IPCS team was so patient, explained the safety measures, and solved our termite problem completely. It feels great to have a safe and pest-free home.",
                         name: "Mrs. Anjali Rao",
                         role: "Homeowner, Jubilee Hills"
                     }
