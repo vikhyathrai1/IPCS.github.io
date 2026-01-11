@@ -5,6 +5,8 @@ import './Header.css';
 
 
 
+import logo from '../assets/logo.svg';
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,7 +24,7 @@ const Header = () => {
 
   const Logo = () => (
     <Link to="/" className="logo-container" onClick={closeMenu}>
-      <img src="/logo.svg" alt="IPCS Logo" className="logo-img" />
+      <img src={logo} alt="IPCS Logo" className="logo-img" />
       <span className="logo-text">
         <span className="logo-title">Industrial Pest Control Services</span>
       </span>
